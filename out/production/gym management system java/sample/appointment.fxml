@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="520.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appointmentController">
+   <children>
+      <TextField fx:id="trainerNameTextField" layoutX="115.0" layoutY="310.0" prefHeight="27.0" prefWidth="275.0" promptText="Trainer's Name" />
+      <ListView fx:id="trainerListView" layoutY="107.0" prefHeight="166.0" prefWidth="390.0" />
+      <AnchorPane prefHeight="82.0" prefWidth="800.0" style="-fx-background-color: #333;">
+         <children>
+            <Text fill="WHITE" layoutX="76.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainer Appointment">
+               <font>
+                  <Font name="Baloo Da Regular" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="485.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Appointment">
+               <font>
+                  <Font name="Baloo Da Regular" size="24.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+      <ListView fx:id="programListView" layoutX="410.0" layoutY="107.0" prefHeight="166.0" prefWidth="390.0" />
+      <TextField fx:id="dateTextField" layoutX="115.0" layoutY="348.0" prefHeight="27.0" prefWidth="275.0" promptText="Date" />
+      <TextField fx:id="programNameTextField" layoutX="511.0" layoutY="310.0" prefHeight="27.0" prefWidth="275.0" promptText="Program's Name" />
+      <TextField layoutX="511.0" layoutY="348.0" prefHeight="27.0" prefWidth="275.0" promptText="Date" />
+      <Label layoutX="35.0" layoutY="315.0" text="Trainer" />
+      <Label layoutX="35.0" layoutY="353.0" text="Date" />
+      <Label layoutX="449.0" layoutY="315.0" text="Program" />
+      <Label layoutX="449.0" layoutY="353.0" text="Date" />
+      <Button fx:id="makeAppTrainerButton" layoutX="78.0" layoutY="393.0" mnemonicParsing="false" onAction="#makeAppTrainerButtonOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="Make Appointment" textFill="WHITE" />
+      <Button fx:id="makeAppProgramButton" layoutX="488.0" layoutY="393.0" mnemonicParsing="false" onAction="#makeAppProgramButtonOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="Make Appointment" textFill="WHITE" />
+      <Button fx:id="cancelButton" layoutX="360.0" layoutY="393.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #333;" text="Cancel" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="90.0" text="Name" />
+      <Label layoutX="89.0" layoutY="90.0" text="Experience" />
+      <Label layoutX="190.0" layoutY="90.0" text="Description" />
+      <Label fx:id="trainerLabelSuccess" alignment="CENTER" layoutX="119.0" layoutY="283.0" prefHeight="17.0" prefWidth="267.0" textFill="#2727c3" />
+      <Label layoutX="424.0" layoutY="90.0" text="Name" />
+      <Label layoutX="551.0" layoutY="90.0" text="Date" />
+      <Label layoutX="480.0" layoutY="90.0" text="Length" />
+      <Label layoutX="605.0" layoutY="90.0" text="Hour" />
+      <Label layoutX="671.0" layoutY="90.0" text="Description" />
+      <Label fx:id="programLabelSuccess" alignment="CENTER" layoutX="515.0" layoutY="283.0" prefHeight="17.0" prefWidth="267.0" textFill="#2727c3" />
+      <Button fx:id="trainerReviewButton" layoutX="78.0" layoutY="453.0" mnemonicParsing="false" onAction="#trainerReviewButtonOnAction" prefHeight="40.0" prefWidth="301.0" style="-fx-background-color: #333;" text="Leave a Trainer Review Here" textFill="WHITE" />
+      <Button fx:id="gymReviewButton" layoutX="424.0" layoutY="453.0" mnemonicParsing="false" onAction="#gymReviewButtonOnAction" prefHeight="40.0" prefWidth="301.0" style="-fx-background-color: #333;" text="Leave a Gym Review Here" textFill="WHITE" />
+   </children>
+</AnchorPane>

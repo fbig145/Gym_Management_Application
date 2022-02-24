@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.customerFrontPageController">
+   <children>
+      <AnchorPane prefHeight="82.0" prefWidth="520.0" style="-fx-background-color: #333;">
+         <children>
+            <Text fill="WHITE" layoutX="135.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO CITY GYM">
+               <font>
+                  <Font name="Baloo Da Regular" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Text fill="#333333" layoutX="165.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here are your credentials:">
+         <font>
+            <Font name="Baloo Da Regular" size="16.0" />
+         </font>
+      </Text>
+      <Label layoutX="177.0" layoutY="132.0" text="First Name:" />
+      <Label fx:id="firstnameLabelText" layoutX="260.0" layoutY="132.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="160.0" text="Last Name:" />
+      <Label fx:id="lastnameLabelText" layoutX="260.0" layoutY="160.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="187.0" text="E-mail:" />
+      <Label fx:id="emailLabelText" layoutX="260.0" layoutY="187.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="215.0" text="Birth Day:" />
+      <Label fx:id="birthdayLabelText" layoutX="260.0" layoutY="215.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="243.0" text="City:" />
+      <Label fx:id="cityLabelText" layoutX="260.0" layoutY="243.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="271.0" text="Address:" />
+      <Label fx:id="addressLabelText" layoutX="260.0" layoutY="271.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="302.0" text="Username:" />
+      <Label fx:id="usernameLabelText" layoutX="260.0" layoutY="302.0" prefHeight="17.0" prefWidth="235.0" />
+      <Label layoutX="177.0" layoutY="331.0" prefHeight="17.0" prefWidth="101.0" text="Membership due:" />
+      <Label fx:id="membershipLabelText" layoutX="284.0" layoutY="331.0" prefHeight="17.0" prefWidth="212.0" />
+      <Button fx:id="makeAppointmentButton" layoutX="143.0" layoutY="427.0" mnemonicParsing="false" onAction="#makeAppointmentButtonOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="Make Appointment" textFill="WHITE" />
+      <Button fx:id="updateCredentialsButton" layoutX="142.0" layoutY="486.0" mnemonicParsing="false" onAction="#updateCredentialsButtonOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="Update Credentials" textFill="WHITE" />
+      <Button fx:id="seeCredentialsButton" layoutX="142.0" layoutY="369.0" mnemonicParsing="false" onAction="#setSeeCredentialsButtonOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="See Credentials" textFill="WHITE" />
+      <Button fx:id="changePasswordButton" layoutX="142.0" layoutY="544.0" mnemonicParsing="false" onAction="#changePasswordOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="Change Password" textFill="WHITE" />
+      <Button fx:id="cancelButton" layoutX="142.0" layoutY="602.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="40.0" prefWidth="235.0" style="-fx-background-color: #333;" text="Cancel" textFill="WHITE" />
+   </children>
+</AnchorPane>
